@@ -1,0 +1,270 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+header {
+    background: #07277c;
+    color: #ffffff;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+header .navbar-brand {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+header .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+header .navbar-nav .nav-link:hover {
+    background: #074ef4;
+    border-radius: 5px;
+}
+
+header .navbar-nav .dropdown-menu {
+    background: #07277c;
+}
+
+header .navbar-nav .dropdown-item {
+    color: #ffffff;
+}
+
+header .navbar-nav .dropdown-item:hover {
+    background: #074ef4;
+}
+
+header .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+header .btn-secondary {
+    background:#0d4df9;
+    color: #333;
+}
+
+header .btn-primary {
+    background: #ffffff;
+    color: #07277c;
+    border: 1px solid #07277c;
+}
+
+header .btn:hover {
+    opacity: 0.8;
+}
+
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Hero section */
+#heroCarousel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('img/it-team.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero-content {
+    max-width: 900px;
+    text-align: center;
+    margin-left: 140px;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.hero-content .btn-primary {
+    background: #0044fe;
+    color: #fff;
+}
+
+.hero-content .btn-primary:hover {
+    background: #051a5d;
+}
+
+.hero-content .btn-outline-primary {
+    background: #ffffff;
+    color: #07277c;
+    border: 1px solid #07277c;
+}
+
+.hero-content .btn-outline-primary:hover {
+    background: #07277c;
+    color: #fff;
+}
+
+/* Performance Section */
+.performance {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    text-align: center;
+}
+
+.performance .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.performance .image-container {
+    width: 6000px;  
+    margin-right: 20px; 
+ 
+}
+
+.performance .text-container {
+    flex-grow: 1;
+    text-align: center;  
+}
+
+.performance img {
+    width: 100%; 
+    height: auto;
+    
+}
+
+
+
+
+.performance h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.performance p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.performance .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+
+.performance .btn-primary {
+    background: #07277c;
+    color: #fff;
+}
+
+.performance .btn-secondary {
+    background: #ffffff;
+    color: #07277c;
+    border: 1px solid #07277c;
+}
+
+.performance .btn:hover {
+    opacity: 0.8;
+}
+
+/* Services Section */
+.services {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services .card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+.services .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.services .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.services .card button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: #07277c;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.services .card button:hover {
+    background: #051a5d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 60px; 
+    }
+}
